@@ -1,6 +1,8 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var morgan = require('morgan');
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://locallhost:27017/Manager-record-Express');
 var app = express();
 
 //logar toda as requisições que foram feitas 
@@ -13,7 +15,7 @@ app.use(bodyParser.json());
 
 app.get('/', function(requisicao, resposta, proximo){
     resposta.send('get funcionando');
-})
+});
 
 //validando a porta que esta sendo usada
 app.listen(3000, function(){
