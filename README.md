@@ -16,3 +16,10 @@ Chai = [http://chaijs.com/]
 C:\Program Files\MongoDB\Server\6.0\bin>mongod.exe --dbpath c:\data\db
 C:\Program Files\MongoDB\Server\6.0\bin>mongo
 
+//test automatization
+
+#npm install -g mocha
+
+#npm install --save-dev chai chai-http
+
+
