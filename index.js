@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
 app.get('/', function(requisicao, resposta, proximo){
-    resposta.send('ok');
+    resposta.send('get funcionando');
 })
 
 //validando a porta que esta sendo usada
