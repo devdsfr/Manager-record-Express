@@ -103,6 +103,7 @@ describe('Recorde', function(){
 
             res.body.recorde.should.have.property('_id');
             res.body.recorde.should.have.property('token');
+            res.body.recorde.should.have.property('username');
             res.body.recorde.should.have.property('recorde');
 
             res.body.recorde.recorde.should.be.equal(1001);
